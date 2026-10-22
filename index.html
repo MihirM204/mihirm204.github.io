@@ -3,9 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Mihir Mahale: computer science and philosophy student at Syracuse University. Projects, experience and essays on trustworthy technology.">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
-<title>Mihir Mahale</title>
+<title>Mihir Mahale · Computer Science &amp; Philosophy, Syracuse University</title>
+<meta name="description" content="Mihir Mahale is a computer science student with a minor in philosophy at Syracuse University. Projects, experience and essays on trustworthy AI, ethics and design.">
+<meta name="author" content="Mihir Mahale">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://mihirmahale.com/">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mihir Mahale">
+<meta property="og:title" content="Mihir Mahale · Computer Science &amp; Philosophy, Syracuse University">
+<meta property="og:description" content="Mihir Mahale is a computer science student with a minor in philosophy at Syracuse University. Projects, experience and essays on trustworthy AI, ethics and design.">
+<meta property="og:url" content="https://mihirmahale.com/">
+<meta property="og:image" content="https://mihirmahale.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mihir Mahale. Builds the machine. Asks what it’s for.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mihir Mahale · Computer Science &amp; Philosophy, Syracuse University">
+<meta name="twitter:description" content="Mihir Mahale is a computer science student with a minor in philosophy at Syracuse University. Projects, experience and essays on trustworthy AI, ethics and design.">
+<meta name="twitter:image" content="https://mihirmahale.com/og-image.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Mihir Mahale", "url": "https://mihirmahale.com/", "image": "https://mihirmahale.com/og-image.png", "email": "mailto:mihirm.official@gmail.com", "description": "Computer science student with a minor in philosophy at Syracuse University, writing about trustworthy AI, ethics and design.", "affiliation": {"@type": "CollegeOrUniversity", "name": "Syracuse University"}, "homeLocation": {"@type": "Place", "name": "Mumbai, India"}, "knowsLanguage": ["English", "Hindi", "Marathi"], "knowsAbout": ["Computer Science", "Artificial Intelligence", "Machine Learning", "Natural Language Processing", "Human-Computer Interaction", "Accessibility", "Technology Ethics", "Philosophy", "Cryptography"], "sameAs": ["https://www.linkedin.com/in/mihir-mahale", "https://github.com/mihirm204"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=JetBrains+Mono:wght@500&display=swap">
@@ -220,13 +241,14 @@ p{margin:0}
   padding:28px;display:flex;flex-direction:column;gap:10px;min-height:260px;min-width:0;
   transition:transform .3s var(--ease),box-shadow .3s var(--ease)
 }
-.essay:hover{transform:translateY(-3px) scale(1.01);box-shadow:0 18px 40px rgb(0 0 0 / .10)}
+.essay:hover{text-decoration:none;transform:translateY(-3px) scale(1.01);box-shadow:0 18px 40px rgb(0 0 0 / .10)}
 .essay .tag{font-size:13px;font-weight:600;color:var(--label-2)}
 .essay h3{font-size:24px;letter-spacing:-.025em;line-height:1.12}
 .essay .sub{color:var(--label-2);font-size:15px}
 .essay .pull{font-family:var(--font-serif);font-size:19px;line-height:1.35;margin-top:auto;padding-top:14px;letter-spacing:-.01em}
 .essay .go{color:var(--accent);font-size:15px}
 .essay .go::after{content:" ›"}
+.band:not(.alt) .essay{background:var(--bg-2)}
 .essay.wide{grid-column:span 2;background:linear-gradient(160deg,var(--tile),var(--bg-2))}
 .band.alt .essay.wide{background:var(--tile)}
 @media (max-width:900px){.essays{grid-template-columns:repeat(2,minmax(0,1fr))}.essay.wide{grid-column:span 2}}
@@ -554,7 +576,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
       <h2 class="h-section" id="writing-h">I think in essays.</h2>
       <p class="lede">On AI, ethics, privacy and design. Open any piece to read it in full.</p>
     </div>
-    <div class="essays" id="essay-grid"></div>
+    <div class="essays" id="essay-grid">
+      <a class="essay rise wide" href="/writing/ai-and-i/" data-essay="ai-and-i"><span class="tag">Personal essay · September 2025</span><h3>AI and I</h3><span class="sub">A self-reflection on living with a language model</span><span class="pull">“It hasn’t given me superpowers. It’s given me a mirror.”</span><span class="go">Read</span></a>
+      <a class="essay rise" href="/writing/driving/" data-essay="driving"><span class="tag">Essay · November 2025</span><h3>AI and Practice: Driving</h3><span class="sub">What happens to driving when the driver is software</span><span class="pull">“Mobility becomes something you receive, not something you perform or control.”</span><span class="go">Read</span></a>
+      <a class="essay rise" href="/writing/voice/" data-essay="voice"><span class="tag">Accessibility · November 2025</span><h3>Voice</h3><span class="sub">How AI helps people with ALS keep their own voice</span><span class="pull">“A recorded laugh or a signature phrase communicates belonging.”</span><span class="go">Read</span></a>
+      <a class="essay rise" href="/writing/data/" data-essay="data"><span class="tag">Privacy · December 2025</span><h3>Data</h3><span class="sub">The new power possessed by companies</span><span class="pull">“It runs quietly in the background, disguised as convenience.”</span><span class="go">Read</span></a>
+      <a class="essay rise" href="/writing/generations/" data-essay="generations"><span class="tag">Research essay · December 2025</span><h3>AI &amp; Society</h3><span class="sub">Younger generations and older generations</span><span class="pull">“Help both generations debug not only their code, but also their shared future.”</span><span class="go">Read</span></a>
+      <a class="essay rise" href="/writing/risk/" data-essay="risk"><span class="tag">Engineering ethics · October 2025</span><h3>Risk, Responsibility, and Collapse</h3><span class="sub">The Big Dig and the I-35W bridge disasters</span><span class="pull">“Not only engineering failures but failures of moral thought.”</span><span class="go">Read</span></a>
+      <a class="essay rise" href="/writing/paper/" data-essay="paper"><span class="tag">Public speaking · Speech</span><h3>The Case for Paper</h3><span class="sub">A speech on writing by hand in a digital world</span><span class="pull">“There’s permanence in writing by hand.”</span><span class="go">Read</span></a>
+    </div>
   </div>
 </section>
 
@@ -663,6 +693,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
       <button class="btn small ghost" id="copy" type="button">Copy</button>
     </div>
     <p class="copied" id="copied" aria-live="polite"></p>
+    <div class="cta" style="margin-top:8px"><a class="more" href="https://www.linkedin.com/in/mihir-mahale" rel="me noopener" target="_blank">LinkedIn</a><a class="more" href="https://github.com/mihirm204" rel="me noopener" target="_blank">GitHub</a></div>
   </div>
 </section>
 
@@ -671,7 +702,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 <footer>
   <div class="wrap">
     <span>© 2026 Mihir Mahale</span>
-    <span>Mumbai · Syracuse · London</span>
+    <span>Mumbai · Syracuse · London · <a href="https://www.linkedin.com/in/mihir-mahale" rel="me noopener" target="_blank">LinkedIn</a></span>
   </div>
 </footer>
 
@@ -808,27 +839,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   lightStory(); navState();
 
   /* ---------------- writing ---------------- */
-  var PULL = {
-    'ai-and-i':'“It hasn’t given me superpowers. It’s given me a mirror.”',
-    'driving':'“Mobility becomes something you receive, not something you perform or control.”',
-    'voice':'“A recorded laugh or a signature phrase communicates belonging.”',
-    'data':'“It runs quietly in the background, disguised as convenience.”',
-    'generations':'“Help both generations debug not only their code, but also their shared future.”',
-    'risk':'“Not only engineering failures but failures of moral thought.”',
-    'paper':'“There’s permanence in writing by hand.”'
-  };
   var grid = $('essay-grid');
-  ESSAYS.forEach(function(e, idx){
-    var b = document.createElement('button');
-    b.type='button'; b.className = 'essay rise' + (idx===0 ? ' wide' : ''); b.dataset.essay = e.id;
-    b.innerHTML = '<span class="tag">'+esc(e.tag)+' · '+esc(e.date)+'</span><h3>'+esc(e.title)+'</h3><span class="sub">'+esc(e.sub)+'</span>'
-      + '<span class="pull">'+esc(PULL[e.id]||'')+'</span><span class="go">Read</span>';
-    grid.appendChild(b);
-  });
   var sheet = $('sheet'), sbody = $('sheet-body'), skick = $('sheet-kicker');
   function openEssay(id){
     var e = ESSAYS.filter(function(x){return x.id===id})[0]; if (!e) return;
-    skick.textContent = e.tag + ' · ' + e.date;
+    skick.innerHTML = esc(e.tag + ' · ' + e.date) + ' · <a href="/writing/' + e.id + '/">Open as page</a>';
     var h = '<h2 id="sheet-title">'+esc(e.title)+'</h2><p class="sub">'+esc(e.sub)+'</p><p class="by">Mihir Mahale · '+esc(e.date)+'</p><article>';
     e.blocks.forEach(function(bk){ h += bk.t==='h' ? '<h3>'+esc(bk.x)+'</h3>' : '<p>'+esc(bk.x)+'</p>'; });
     h += '</article>';
@@ -837,7 +852,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
     if (typeof sheet.showModal === 'function') sheet.showModal(); else sheet.setAttribute('open','');
   }
   document.addEventListener('click', function(ev){
-    var t = ev.target.closest('[data-essay]'); if (t){ openEssay(t.dataset.essay); }
+    var t = ev.target.closest('[data-essay]');
+    if (t && !(ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button === 1)){ ev.preventDefault(); openEssay(t.dataset.essay); }
   });
   $('sheet-close').addEventListener('click', function(){ sheet.close ? sheet.close() : sheet.removeAttribute('open'); });
   sheet.addEventListener('click', function(ev){ if (ev.target === sheet) sheet.close(); });

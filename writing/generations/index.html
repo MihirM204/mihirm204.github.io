@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>AI &amp; Society: Younger generations and older generations · Mihir Mahale</title>
+<meta name="description" content="Artificial intelligence (AI) is often described as a general-purpose technology that is reshaping everything from how we work to how we relate to each…">
+<meta name="author" content="Mihir Mahale">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://mihirmahale.com/writing/generations/">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Mihir Mahale">
+<meta property="og:title" content="AI &amp; Society: Younger generations and older generations · Mihir Mahale">
+<meta property="og:description" content="Artificial intelligence (AI) is often described as a general-purpose technology that is reshaping everything from how we work to how we relate to each…">
+<meta property="og:url" content="https://mihirmahale.com/writing/generations/">
+<meta property="og:image" content="https://mihirmahale.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mihir Mahale. Builds the machine. Asks what it’s for.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI &amp; Society: Younger generations and older generations · Mihir Mahale">
+<meta name="twitter:description" content="Artificial intelligence (AI) is often described as a general-purpose technology that is reshaping everything from how we work to how we relate to each…">
+<meta name="twitter:image" content="https://mihirmahale.com/og-image.png">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Person", "name": "Mihir Mahale", "url": "https://mihirmahale.com/", "image": "https://mihirmahale.com/og-image.png", "email": "mailto:mihirm.official@gmail.com", "description": "Computer science student with a minor in philosophy at Syracuse University, writing about trustworthy AI, ethics and design.", "affiliation": {"@type": "CollegeOrUniversity", "name": "Syracuse University"}, "homeLocation": {"@type": "Place", "name": "Mumbai, India"}, "knowsLanguage": ["English", "Hindi", "Marathi"], "knowsAbout": ["Computer Science", "Artificial Intelligence", "Machine Learning", "Natural Language Processing", "Human-Computer Interaction", "Accessibility", "Technology Ethics", "Philosophy", "Cryptography"], "sameAs": ["https://www.linkedin.com/in/mihir-mahale", "https://github.com/mihirm204"]}, {"@context": "https://schema.org", "@type": "Article", "headline": "AI & Society: Younger generations and older generations", "description": "Artificial intelligence (AI) is often described as a general-purpose technology that is reshaping everything from how we work to how we relate to each…", "author": {"@type": "Person", "name": "Mihir Mahale", "url": "https://mihirmahale.com/"}, "mainEntityOfPage": "https://mihirmahale.com/writing/generations/", "image": "https://mihirmahale.com/og-image.png", "inLanguage": "en", "datePublished": "2025-12-13"}]</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: Apple product-page rhythm. Alternating full-bleed bands (white / system gray), one centred
+   readable column (980px), big tight headlines, rounded tiles only where an object needs to stand apart.
+   Glass is reserved for the floating nav. */
+:root{
+  --bg:#ffffff;
+  --bg-2:#f5f5f7;
+  --tile:#ffffff;
+  --label:#1d1d1f;
+  --label-2:#6e6e73;
+  --label-3:#86868b;
+  --sep:rgb(0 0 0 / .10);
+  --accent:#0071e3;
+  --accent-ink:#ffffff;
+  --success:#1f8f3a;
+  --danger:#d70015;
+  --glass:rgb(255 255 255 / .72);
+  --glass-edge:rgb(0 0 0 / .08);
+  --scrim:rgb(0 0 0 / .32);
+  /* the four bases, used by the sunflower and the cipher */
+  --base-a:#0071e3;
+  --base-c:#5e5ce6;
+  --base-g:#30b0c7;
+  --base-t:#ff9f0a;
+
+  --font-sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Inter","Helvetica Neue",system-ui,sans-serif;
+  --font-serif:ui-serif,"New York","Newsreader",Georgia,serif;
+  --font-mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace;
+
+  --r-s:8px; --r-m:12px; --r-l:20px; --r-xl:28px;
+  --ease:cubic-bezier(.32,.72,0,1);
+  --col:980px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#000000; --bg-2:#101012; --tile:#1c1c1e;
+    --label:#f5f5f7; --label-2:#a1a1a6; --label-3:#86868b;
+    --sep:rgb(255 255 255 / .14);
+    --accent:#2997ff; --accent-ink:#ffffff;
+    --success:#30d158; --danger:#ff453a;
+    --glass:rgb(22 22 23 / .72); --glass-edge:rgb(255 255 255 / .10);
+    --scrim:rgb(0 0 0 / .6);
+    --base-a:#2997ff; --base-c:#7d7aff; --base-g:#40c8e0; --base-t:#ffb340;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#000000; --bg-2:#101012; --tile:#1c1c1e;
+  --label:#f5f5f7; --label-2:#a1a1a6; --label-3:#86868b;
+  --sep:rgb(255 255 255 / .14);
+  --accent:#2997ff; --accent-ink:#ffffff;
+  --success:#30d158; --danger:#ff453a;
+  --glass:rgb(22 22 23 / .72); --glass-edge:rgb(255 255 255 / .10);
+  --scrim:rgb(0 0 0 / .6);
+  --base-a:#2997ff; --base-c:#7d7aff; --base-g:#40c8e0; --base-t:#ffb340;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);color:var(--label);
+  font-family:var(--font-sans);font-size:17px;line-height:1.47;letter-spacing:-.022em;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3{margin:0;text-wrap:balance;font-weight:600}
+p{margin:0}
+
+.wrap{max-width:var(--col);margin-inline:auto;padding-inline:22px}
+.band{padding-block:clamp(72px,11vw,128px)}
+.band.alt{background:var(--bg-2)}
+.eyebrow{font-size:17px;font-weight:600;color:var(--label-2);letter-spacing:-.01em;margin-bottom:10px}
+.h-section{font-size:clamp(36px,5.6vw,56px);line-height:1.07;letter-spacing:-.028em}
+.lede{font-size:clamp(19px,2.1vw,21px);line-height:1.38;color:var(--label-2);max-width:40ch;margin-top:18px;letter-spacing:-.016em}
+.section-head{margin-bottom:clamp(40px,6vw,64px)}
+.more{display:inline-flex;align-items:center;gap:4px;font-size:17px;min-height:44px}
+.more::after{content:"›";font-size:1.15em;line-height:1;transform:translateY(-1px)}
+
+/* ---------- Glass nav (navigation layer only) ---------- */
+.nav{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:20;
+  background:var(--glass);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:.5px solid var(--glass-edge);
+}
+.nav .wrap{display:flex;align-items:center;gap:20px;height:52px}
+.nav .brand{font-weight:600;font-size:17px;color:var(--label);white-space:nowrap}
+.nav .brand:hover{text-decoration:none}
+.nav ul{list-style:none;margin:0 0 0 auto;padding:0;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;min-width:0}
+.nav ul::-webkit-scrollbar{display:none}
+.nav li a{display:flex;align-items:center;min-height:44px;padding-inline:10px;font-size:13px;color:var(--label);opacity:.8;white-space:nowrap;letter-spacing:-.01em}
+.nav li a:hover{opacity:1;text-decoration:none}
+.nav li a[aria-current="true"]{opacity:1;font-weight:600}
+@media (prefers-reduced-transparency: reduce){.nav{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}}
+
+/* ---------- Hero ---------- */
+.hero{padding-block:clamp(56px,9vw,104px) clamp(32px,5vw,56px);text-align:center;overflow:hidden}
+.hero .eyebrow{font-size:clamp(15px,1.6vw,19px);margin-bottom:14px}
+.hero h1{font-size:clamp(56px,11vw,128px);line-height:1;letter-spacing:-.045em;font-weight:700}
+.hero .tag{
+  font-size:clamp(26px,4.2vw,44px);line-height:1.12;letter-spacing:-.03em;font-weight:600;margin-top:14px;
+  background:linear-gradient(90deg,var(--base-a),var(--base-c) 55%,var(--base-g));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .intro{font-size:clamp(17px,1.9vw,21px);color:var(--label-2);max-width:36em;margin:22px auto 0;line-height:1.42}
+.cta{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;align-items:center;margin-top:30px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border-radius:980px;
+  background:var(--accent);color:var(--accent-ink);font-size:17px;font-weight:500;border:0;cursor:pointer;font-family:inherit;letter-spacing:-.01em;
+  transition:transform .2s var(--ease),filter .2s var(--ease)
+}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.sunflower{display:block;margin:clamp(36px,5vw,56px) auto 0;width:min(440px,82vw);aspect-ratio:1;max-width:100%}
+.hero .caption{font-size:13px;color:var(--label-3);margin-top:8px}
+
+/* ---------- Story ---------- */
+.story p{font-size:clamp(28px,4.4vw,48px);line-height:1.14;letter-spacing:-.03em;font-weight:600;max-width:22em}
+.story .w{color:var(--label-3);transition:color .35s var(--ease)}
+.story .w.on{color:var(--label)}
+.story .sig{margin-top:28px;font-size:15px;color:var(--label-2);font-weight:400;letter-spacing:-.01em}
+
+/* ---------- Numbers ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.stat{background:var(--tile);border-radius:var(--r-xl);padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;gap:6px;min-height:200px;justify-content:flex-end}
+.stat .k{font-size:15px;font-weight:600;color:var(--label-2)}
+.stat .v{font-size:clamp(44px,6vw,72px);line-height:1;letter-spacing:-.04em;font-weight:700;font-variant-numeric:tabular-nums}
+.stat .d{font-size:15px;color:var(--label-2);line-height:1.4}
+.stat.feature{grid-column:span 2;background:linear-gradient(135deg,var(--base-a),var(--base-c));color:#fff}
+.stat.feature .k,.stat.feature .d{color:rgb(255 255 255 / .85)}
+@media (max-width:760px){.stats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.stat{min-height:160px}}
+@media (max-width:480px){.stats{grid-template-columns:minmax(0,1fr)}.stat.feature{grid-column:auto}}
+
+/* ---------- Outlook ---------- */
+.beliefs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,6vw,72px) clamp(32px,5vw,64px)}
+.belief{border-top:1px solid var(--sep);padding-top:22px;min-width:0}
+.belief .n{font-size:13px;color:var(--label-3);font-variant-numeric:tabular-nums;letter-spacing:0}
+.belief blockquote{margin:10px 0 0;font-family:var(--font-serif);font-size:clamp(26px,3.2vw,34px);line-height:1.15;letter-spacing:-.015em;font-weight:400}
+.belief p{color:var(--label-2);margin-top:14px;max-width:34em}
+.belief .src{display:inline-flex;align-items:center;min-height:44px;font-size:15px;margin-top:4px;background:none;border:0;padding:0;color:var(--accent);cursor:pointer;font-family:inherit;letter-spacing:-.01em}
+.belief .src::after{content:" ›"}
+@media (max-width:700px){.beliefs{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- Experience (inset grouped list) ---------- */
+.list{background:var(--tile);border-radius:var(--r-xl);overflow:hidden}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 24px;padding:24px clamp(20px,3vw,32px);position:relative}
+.row + .row::before{content:"";position:absolute;top:0;left:clamp(20px,3vw,32px);right:0;border-top:.5px solid var(--sep)}
+.row h3{font-size:21px;letter-spacing:-.02em}
+.row .org{color:var(--label-2);font-size:17px}
+.row .when{color:var(--label-3);font-size:15px;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.row p{grid-column:1 / -1;color:var(--label-2);margin-top:8px;max-width:46em}
+.chips{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:0;list-style:none}
+.chip{font-size:13px;padding:5px 12px;border-radius:980px;background:var(--bg-2);color:var(--label);letter-spacing:-.005em}
+.band.alt .chip{background:var(--bg-2)}
+@media (max-width:600px){.row{grid-template-columns:minmax(0,1fr)}.row .when{text-align:left}}
+
+/* ---------- Projects ---------- */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.tile{background:var(--tile);border-radius:var(--r-xl);padding:clamp(24px,3.2vw,40px);min-width:0;display:flex;flex-direction:column;gap:10px}
+.band:not(.alt) .tile{background:var(--bg-2)}
+.tile h3{font-size:clamp(24px,2.8vw,32px);letter-spacing:-.025em;line-height:1.1}
+.tile .kicker{font-size:13px;font-weight:600;color:var(--label-2);text-transform:uppercase;letter-spacing:.06em}
+.tile p{color:var(--label-2)}
+.span-6{grid-column:span 6}.span-3{grid-column:span 3}.span-2{grid-column:span 2}
+@media (max-width:860px){.span-2{grid-column:span 3}}
+@media (max-width:600px){.span-3,.span-2{grid-column:span 6}}
+
+/* cipher lab */
+.lab{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4vw,48px);margin-top:18px;align-items:start}
+@media (max-width:820px){.lab{grid-template-columns:minmax(0,1fr)}}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-size:13px;font-weight:600;color:var(--label-2)}
+.field input{
+  font:inherit;font-size:17px;color:var(--label);background:var(--bg);border:1px solid var(--sep);border-radius:var(--r-m);
+  padding:0 14px;min-height:44px;width:100%;letter-spacing:-.01em
+}
+.field input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.dna{
+  font-family:var(--font-mono);font-size:14px;line-height:1.7;letter-spacing:.08em;word-break:break-all;
+  background:var(--bg);border-radius:var(--r-m);padding:14px 16px;max-height:168px;overflow:auto;border:1px solid var(--sep)
+}
+.dna b{font-weight:500}
+.dna .A{color:var(--base-a)}.dna .C{color:var(--base-c)}.dna .G{color:var(--base-g)}.dna .T{color:var(--base-t)}
+.dna .mut{background:var(--danger);color:#fff;border-radius:3px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--label-2);margin-top:10px;font-variant-numeric:tabular-nums}
+.status{margin-top:14px;font-size:15px;display:flex;gap:10px;align-items:flex-start;min-height:44px}
+.status .dot{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:700;margin-top:1px}
+.status.ok .dot{background:var(--success)}
+.status.bad .dot{background:var(--danger)}
+.status .out{font-weight:600}
+.status small{display:block;color:var(--label-2);font-size:13px;font-weight:400;margin-top:2px}
+.lab-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn.small{font-size:15px;padding:0 18px}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.steps li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;font-size:15px;color:var(--label-2)}
+.steps li b{color:var(--label);font-weight:600;display:block}
+.steps .i{width:28px;height:28px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font-size:13px;font-weight:600;color:var(--label);font-variant-numeric:tabular-nums}
+.minisun{width:100%;max-width:280px;aspect-ratio:1;display:block;margin:4px auto 18px}
+
+/* ---------- Writing ---------- */
+.essays{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.essay{
+  text-align:left;font:inherit;color:inherit;border:0;cursor:pointer;background:var(--tile);border-radius:var(--r-xl);
+  padding:28px;display:flex;flex-direction:column;gap:10px;min-height:260px;min-width:0;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease)
+}
+.essay:hover{transform:translateY(-3px) scale(1.01);box-shadow:0 18px 40px rgb(0 0 0 / .10)}
+.essay .tag{font-size:13px;font-weight:600;color:var(--label-2)}
+.essay h3{font-size:24px;letter-spacing:-.025em;line-height:1.12}
+.essay .sub{color:var(--label-2);font-size:15px}
+.essay .pull{font-family:var(--font-serif);font-size:19px;line-height:1.35;margin-top:auto;padding-top:14px;letter-spacing:-.01em}
+.essay .go{color:var(--accent);font-size:15px}
+.essay .go::after{content:" ›"}
+.essay.wide{grid-column:span 2;background:linear-gradient(160deg,var(--tile),var(--bg-2))}
+.band.alt .essay.wide{background:var(--tile)}
+@media (max-width:900px){.essays{grid-template-columns:repeat(2,minmax(0,1fr))}.essay.wide{grid-column:span 2}}
+@media (max-width:560px){.essays{grid-template-columns:minmax(0,1fr)}.essay.wide{grid-column:auto}}
+
+/* reading sheet */
+dialog.sheet{
+  border:0;padding:0;width:min(760px,100% - 24px);max-height:min(88vh,100% - 24px);border-radius:var(--r-xl);
+  background:var(--bg);color:var(--label);box-shadow:0 30px 80px rgb(0 0 0 / .35);overflow:hidden
+}
+dialog.sheet[open]{display:flex;flex-direction:column;animation:sheet-in .4s var(--ease)}
+dialog.sheet::backdrop{background:var(--scrim);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+@keyframes sheet-in{from{transform:translateY(24px) scale(.98);opacity:.4}to{transform:none;opacity:1}}
+.sheet-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 8px 8px 24px;border-bottom:.5px solid var(--sep);flex:none}
+.sheet-bar span{font-size:13px;color:var(--label-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.close{width:44px;height:44px;border-radius:50%;border:0;background:var(--bg-2);color:var(--label);font-size:20px;cursor:pointer;display:grid;place-items:center;flex:none}
+.sheet-body{overflow:auto;padding:clamp(24px,5vw,48px);padding-bottom:56px}
+.sheet-body h2{font-size:clamp(32px,5vw,44px);letter-spacing:-.03em;line-height:1.08}
+.sheet-body .sub{font-size:19px;color:var(--label-2);margin-top:8px}
+.sheet-body .by{font-size:13px;color:var(--label-3);margin-top:16px;padding-bottom:24px;border-bottom:.5px solid var(--sep)}
+.sheet-body article{font-family:var(--font-serif);font-size:19px;line-height:1.6;letter-spacing:-.003em;max-width:36em}
+.sheet-body article p{margin-top:1.05em}
+.sheet-body article h3{font-family:var(--font-sans);font-size:21px;margin-top:1.6em;letter-spacing:-.02em}
+.sheet-body .refs{margin-top:36px;font-size:13px;color:var(--label-2);line-height:1.5}
+.sheet-body .refs h4{font-size:13px;margin:0 0 8px;color:var(--label)}
+.sheet-body .refs p{margin-top:6px;overflow-wrap:anywhere}
+
+/* ---------- Off the clock ---------- */
+.life{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.life .tile h3{font-size:22px}
+.life .glyph{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--bg);margin-bottom:6px}
+.band:not(.alt) .life .glyph{background:var(--tile)}
+.glyph svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:860px){.life{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.life{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- Education ---------- */
+.edu{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}
+@media (max-width:820px){.edu{grid-template-columns:minmax(0,1fr)}}
+.edu .tile h3{font-size:28px}
+.kv{display:grid;gap:14px;margin-top:8px}
+.kv div{display:flex;flex-direction:column;gap:2px}
+.kv dt{font-size:13px;font-weight:600;color:var(--label-2)}
+.kv dd{margin:0}
+.certs{list-style:none;margin:0;padding:0}
+.certs li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:12px 0;border-top:.5px solid var(--sep);font-size:15px}
+.certs li:first-child{border-top:0}
+.certs .when{color:var(--label-3);font-variant-numeric:tabular-nums;white-space:nowrap}
+.certs .who{display:block;color:var(--label-2);font-size:13px}
+.chips.loose{margin-top:6px}
+
+/* ---------- Contact ---------- */
+.contact{text-align:center}
+.contact .h-section{font-size:clamp(40px,7vw,80px);letter-spacing:-.04em}
+.contact .lede{margin-inline:auto}
+.mail{
+  display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:32px;
+  font-size:clamp(19px,2.6vw,28px);font-weight:600;letter-spacing:-.02em
+}
+.mail .addr{user-select:all;overflow-wrap:anywhere}
+.copied{font-size:13px;color:var(--success);min-height:20px;margin-top:10px}
+footer{border-top:.5px solid var(--sep);padding-block:22px;font-size:12px;color:var(--label-3)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* motion: transform-only reveals, content is always visible */
+.rise{transition:transform .9s var(--ease)}
+.js .rise.pending{transform:translateY(28px)}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .js .rise.pending{transform:none}
+}
+@media (prefers-contrast: more){
+  :root{--label-2:#3a3a3c;--label-3:#48484a;--sep:rgb(0 0 0 / .4)}
+}
+</style>
+<style>
+.reader{padding-block:clamp(40px,7vw,80px) clamp(56px,8vw,96px)}
+.reader .wrap{max-width:760px}
+.reader .back{display:inline-flex;align-items:center;min-height:44px;font-size:15px;margin-bottom:12px}
+.reader .back::before{content:"‹ ";white-space:pre}
+.reader .sheet-body{padding:0}
+.more-reading{border-top:.5px solid var(--sep);margin-top:56px;padding-top:28px}
+.more-reading h2{font-size:21px;letter-spacing:-.02em;margin-bottom:12px}
+.more-reading ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.more-reading a{display:flex;flex-direction:column;padding:10px 0;min-height:44px}
+.more-reading a span{color:var(--label-2);font-size:15px}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <a class="brand" href="/">Mihir Mahale</a>
+    <ul>
+      <li><a href="/#outlook">Outlook</a></li>
+      <li><a href="/#work">Work</a></li>
+      <li><a href="/#projects">Projects</a></li>
+      <li><a href="/#writing" aria-current="true">Writing</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<main class="reader">
+  <div class="wrap">
+    <a class="back" href="/#writing">All writing</a>
+    <div class="sheet-body">
+      <p class="eyebrow" style="font-size:15px">Research essay · December 2025</p>
+      <h1 style="font-size:clamp(36px,6vw,56px);letter-spacing:-.035em;line-height:1.05">AI &amp; Society</h1>
+      <p class="sub">Younger generations and older generations</p>
+      <p class="by">By <a href="/">Mihir Mahale</a> · December 2025</p>
+      <article><p>Artificial intelligence (AI) is often described as a general-purpose technology that is reshaping everything from how we work to how we relate to each other. Yet its effects are not evenly distributed. In this essay, I compare two social groups—young people (roughly ages 15–30) and older adults (roughly 60+)—to show how the same AI systems can transform their lives in very different ways. I focus on everyday uses such as generative AI chatbots, recommendation systems, and AI-driven platforms in education, work, and healthcare. I chose this comparative approach because age is a powerful axis of inequality in contemporary digital societies: it shapes access to devices, confidence with technology, and cultural narratives about who is “future-ready” and who is “left behind.” Research on AI adoption shows a strong digital divide between younger and older people. Younger users are heavily overrepresented among active AI users, but the older are not. By comparing younger and older generations, we can see not just who uses AI, but how underlying socio-technical mechanisms organize power and opportunity. Rather than treating AI as a neutral tool, I treat it as part of a broader struggle over knowledge. Who gets to design, interpret, and benefit from AI systems? And who is defined, sorted, and controlled by them?</p><p>The young generation today has grown up in an environment saturated with smartphones. Recently, when I was at an airport, on my way back from Thanksgiving break, I heard someone refer to an iPad as cocaine for kids. Surveys suggest that people under 35 are more likely than older adults to have tried AI tools and to feel comfortable experimenting with digital technologies. In this context, AI becomes part of their everyday tasks, work, and labor, especially in cognitive- and creative-intensive areas. Students use AI to summarize readings, debug code, or draft essays. People rely on AI for email drafting, slide design, data analysis, and scheduling social media posts. This can be seen as a form of automation of routine cognitive tasks. Something similar to autocomplete, but for thinking. Scholars like Acemoglu and Johnson argue that such automation can either complement human capabilities or deskill and displace them, depending on how institutions and organizations choose to implement it. When a student outsources all “debugging”—in math, code, or writing—to an AI assistant, they risk losing the slow, frustrating, but essential practice of working through errors and building their own mental models. The fear here is that younger people might become highly efficient at using AI shortcuts, but less practiced at deep problem-solving without a machine in the loop. I had this conversation with my Calc. 1 professor, Dr. Pawel Grzegrzolka. He was the one who used the term “debug” in our conversation. He knew that my major is Computer Science. But the conversation yielded evidence for the above theory. He said that his students who were weak in his class are now even weaker as they are skipping practice. It is important to note that this practice involves making mistakes and spending time figuring out what went wrong while solving the math problem. This theory can be generalized to other fields.</p><p>At the same time, much of what appears to be automation from the outside is actually heteromation: AI systems that quietly rely on substantial human labor behind the scenes. Heteromation describes a new division of labor in which humans provide value “with little or no compensation,” performing microtasks such as data labeling, content rating, clickwork, or feedback that sustain supposedly “autonomous” systems. Young people are disproportionately represented among these “ghost workers,” especially in the Global South, where they perform repetitive and sometimes disturbing content moderation for low wages. Their emotional labor—screening hate speech, self-harm content, and graphic violence—protects end users while remaining mostly invisible. So even while one segment of youth uses AI to offload intellectual effort, another segment is doing invisible tasks to keep those same systems functioning. This reveals how AI reorganizes power around who gets creative control and who is stuck in low-paid, hidden roles.</p><p>On platforms like TikTok, Instagram, and YouTube, young people’s communicative and social labor is also central. They build online personas, manage audiences, and constantly adapt to algorithmic trends. The promise is entrepreneurial freedom and self-expression; the reality is often unstable income, opaque rules, and constant performance pressure driven by algorithmic metrics. AI recommendation systems here not only structure visibility but also extract behavioral data to feed what can be described as platform-level social engineering, in which corporations experiment on users to optimize engagement, profit, and data extraction. These systems operate within a broader architecture of surveillance and targeted personalization. Young users often accept pervasive tracking as the “price of admission” to digital life. Their clicks, chats, location data, and even faces are harvested and repurposed, contributing to a new form of exploitation in which their everyday experiences become raw material for commercial prediction models. This is not limited to advertising. Algorithmic nudging gently steers what they watch, buy, and even believe. Over time, this can lead to pigeonholing, where users are sorted into narrow behavioral profiles that limit what they see, shaping their sense of what is possible in their own lives. This is a curation of an epistemic bubble.</p><p>On the other hand, older people usually come across AI in more formal settings: AI-assisted diagnostics in healthcare, fraud detection systems in banks, automated customer support, or voice assistants in smart speakers.  In theory, these systems can help people stay independent by telling them to take their medicine, letting them use services from home, or making it less necessary to deal with complicated government systems in person.  When they are well-designed and easy for older people to use, studies show that AI-enhanced tools can make it easier to keep an eye on people&#x27;s health and make them less lonely.  But when people talk about AI and older adults, they often use language that is biased against age. Some individuals think that elderly people can&#x27;t use smart technology, while others think that they are &quot;slow to adopt&quot; and hold back progress.   This conversation is crucial because it affects research plans, design assumptions, and policy choices.  Terms like &quot;digital ageism&quot; illustrate how prejudice manifests across the AI lifecycle, from biased datasets that inadequately represent older bodies and voices to exclusionary interfaces and testing methodologies that overlook the demands of older users. In this sense, AI becomes a site where expert institutions “make up” categories of “the elderly” that can then be governed and managed.</p><p>The modularity of AI systems and their underlying supply chain also matters for older adults. A fall-detection system for seniors might involve sensors produced in one country, cloud services in another, and a proprietary algorithm developed elsewhere. All of this is embedded in a larger global production ecosystem. This complex production network is often invisible to end users. Yet decisions about where to host data, how to update models, and who is responsible for failures are distributed across these modules. When a system misclassifies an older person’s symptom or locks them out of an account due to “suspicious activity,” it is difficult to assign accountability. We run into the “many hands problem.” The modular nature of contemporary AI lets organizations offload responsibility onto “the algorithm” or a distant vendor. For older adults, who may already feel uncertain navigating digital systems, this can translate into frustration, mistrust, and real material harm when essential services are blocked or mismanaged.</p><p>States can act as regulators or as facilitators that subsidize AI adoption in healthcare and social services. Decisions about data centers and data residency directly affect older adults’ health and financial data. In some regions, stronger privacy laws may provide better safeguards against intrusive data uses, while looser environments may allow aggressive commercial profiling. Geopolitics plays a big role here. If older adults do not have a voice in these governance debates, they may end up subjected to systems that collect and process intimate information in ways they neither understand nor consent to.</p><p>There are other places where individuals of all ages work together on AI in ways that give them more power.  Digital literacy programs that bring together people of different ages, such as students teaching the elderly how to use smartphones, apps, or even rudimentary AI tools, highlight how AI adoption may be a place for shared learning instead of one-sided control. In these settings, young people’s organizing and social labor help older adults gain confidence, while older adults bring life experience and critical questions that challenge naive enthusiasm. This kind of participation illustrates an alternative model of AI integration, one in which different age groups work together rather than being placed on opposite sides of a technological divide.</p><p>Putting these pieces together, the main contrast is not simply that “young people understand AI” and “old people do not.” Many young people actively use AI tools while still lacking a deep understanding of how they work. They may be confident users but not critical analysts. Many older adults are quite capable of learning and benefiting from AI, but face barriers in design, training, and access that reflect structural discrimination and exploitation rather than individual incompetence. For younger users, the risk is a form of cognitive dependence: as AI automates more tasks, they may lose the habit of “debugging”—of slowly working through a problem, spotting errors, and learning from them without machine support. Their relationship to AI is intensely interactive, but often uncritical. They are simultaneously the experiment subjects in platform-level social engineering and the unpaid or underpaid workforce in the machinery of heteromation.</p><p>In conclusion, AI’s impact on young and old generations is shaped by discourse, power, and concrete institutional decisions about automation, heteromation, and governance. If we treat AI as magic, the young become overconfident users who forget that “it’s just code,” and the old become anxious outsiders who are expected to trust systems they cannot see. If we treat AI as a contested socio-technical system, we can ask more critical questions: Who benefits from this automation? Who performs the hidden labor? Who is being watched, nudged, or pigeonholed? Who has a voice in designing and regulating these systems? A more just AI future would center meaningful participation from both younger and older people: youth not only as early adopters and hidden workers, but as democratic co-designers; elders not only as passive recipients of “smart care,” but as agents whose rights, preferences, and experiences shape design and law. Policies on data residency, platform accountability, and public investment could support AI that augments human capabilities across the life course rather than deepening fractures between “AI natives” and “AI outsiders.” AI does not transform “humanity” in the abstract; it transforms specific social groups in specific ways. The young and the old live in the same AI-saturated world but encounter different interfaces, risks, and opportunities. Paying attention to these differences is the first step toward designing AI systems that help both generations debug not only their code, but also their shared future.</p></article>
+      <div class="refs"><h4>References</h4><p>Acemoglu, D., &amp; Johnson, S. (2023). Power and progress: Our thousand-year struggle over technology and prosperity. PublicAffairs.</p><p>Chen, G., &amp; Spaulding, R. (2025). The impact of AI-powered Alexa assistant on loneliness in homebound older adults: A pilot study. Advances in Geriatric Medicine and Research, 7(1), e250003. https://doi.org/10.20900/agmr20250003</p><p>Chu, C. H., Nyrup, R., Leslie, K., Shi, J., Bianchi, A., Lyn, A., McNicholl, M., Khan, S., Rahimi, S., &amp; Grenier, A. (2022). Digital ageism: Challenges and opportunities in artificial intelligence for older adults. The Gerontologist, 62(7), 947–955. https://doi.org/10.1093/geront/gnab167</p><p>Ekbia, H. R., &amp; Nardi, B. A. (2017). Heteromation, and other stories of computing and capitalism. MIT Press.</p><p>Gray, M. L., &amp; Suri, S. (2019). Ghost work: How to stop Silicon Valley from building a new global underclass. Houghton Mifflin Harcourt.</p><p>Kennedy, B., Yam, E., Kikuchi, E., Pula, I., &amp; Fuentes, J. (2025, September 17). How Americans view AI and its impact on people and society. Pew Research Center. https://www.pewresearch.org/science/2025/09/17/how-americans-view-ai-and-its-impact-on-people-and-society/</p><p>Smith, W. (2025, February 18). AI trends: How Americans use AI by generation. SurveyMonkey Curiosity. https://www.surveymonkey.com/curiosity/ai-trends-by-generations/</p></div>
+    </div>
+    <section class="more-reading" aria-labelledby="more-h">
+      <h2 id="more-h">More writing</h2>
+      <ul><li><a href="/writing/ai-and-i/">AI and I<span>A self-reflection on living with a language model</span></a></li><li><a href="/writing/driving/">AI and Practice: Driving<span>What happens to driving when the driver is software</span></a></li><li><a href="/writing/voice/">Voice<span>How AI helps people with ALS keep their own voice</span></a></li><li><a href="/writing/data/">Data<span>The new power possessed by companies</span></a></li><li><a href="/writing/risk/">Risk, Responsibility, and Collapse<span>The Big Dig and the I-35W bridge disasters</span></a></li><li><a href="/writing/paper/">The Case for Paper<span>A speech on writing by hand in a digital world</span></a></li></ul>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Mihir Mahale</span>
+    <span><a href="/">mihirmahale.com</a> · <a href="https://www.linkedin.com/in/mihir-mahale" rel="me noopener" target="_blank">LinkedIn</a></span>
+  </div>
+</footer>
+</body>
+</html>

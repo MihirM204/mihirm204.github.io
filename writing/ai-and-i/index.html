@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>AI and I: A self-reflection on living with a language model · Mihir Mahale</title>
+<meta name="description" content="For this assignment, I took the self-reflection approach. Instead of doing research from the outside, I turned inward and looked at how I’ve actually…">
+<meta name="author" content="Mihir Mahale">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://mihirmahale.com/writing/ai-and-i/">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Mihir Mahale">
+<meta property="og:title" content="AI and I: A self-reflection on living with a language model · Mihir Mahale">
+<meta property="og:description" content="For this assignment, I took the self-reflection approach. Instead of doing research from the outside, I turned inward and looked at how I’ve actually…">
+<meta property="og:url" content="https://mihirmahale.com/writing/ai-and-i/">
+<meta property="og:image" content="https://mihirmahale.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mihir Mahale. Builds the machine. Asks what it’s for.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI and I: A self-reflection on living with a language model · Mihir Mahale">
+<meta name="twitter:description" content="For this assignment, I took the self-reflection approach. Instead of doing research from the outside, I turned inward and looked at how I’ve actually…">
+<meta name="twitter:image" content="https://mihirmahale.com/og-image.png">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Person", "name": "Mihir Mahale", "url": "https://mihirmahale.com/", "image": "https://mihirmahale.com/og-image.png", "email": "mailto:mihirm.official@gmail.com", "description": "Computer science student with a minor in philosophy at Syracuse University, writing about trustworthy AI, ethics and design.", "affiliation": {"@type": "CollegeOrUniversity", "name": "Syracuse University"}, "homeLocation": {"@type": "Place", "name": "Mumbai, India"}, "knowsLanguage": ["English", "Hindi", "Marathi"], "knowsAbout": ["Computer Science", "Artificial Intelligence", "Machine Learning", "Natural Language Processing", "Human-Computer Interaction", "Accessibility", "Technology Ethics", "Philosophy", "Cryptography"], "sameAs": ["https://www.linkedin.com/in/mihir-mahale", "https://github.com/mihirm204"]}, {"@context": "https://schema.org", "@type": "Article", "headline": "AI and I: A self-reflection on living with a language model", "description": "For this assignment, I took the self-reflection approach. Instead of doing research from the outside, I turned inward and looked at how I’ve actually…", "author": {"@type": "Person", "name": "Mihir Mahale", "url": "https://mihirmahale.com/"}, "mainEntityOfPage": "https://mihirmahale.com/writing/ai-and-i/", "image": "https://mihirmahale.com/og-image.png", "inLanguage": "en", "datePublished": "2025-09-27"}]</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: Apple product-page rhythm. Alternating full-bleed bands (white / system gray), one centred
+   readable column (980px), big tight headlines, rounded tiles only where an object needs to stand apart.
+   Glass is reserved for the floating nav. */
+:root{
+  --bg:#ffffff;
+  --bg-2:#f5f5f7;
+  --tile:#ffffff;
+  --label:#1d1d1f;
+  --label-2:#6e6e73;
+  --label-3:#86868b;
+  --sep:rgb(0 0 0 / .10);
+  --accent:#0071e3;
+  --accent-ink:#ffffff;
+  --success:#1f8f3a;
+  --danger:#d70015;
+  --glass:rgb(255 255 255 / .72);
+  --glass-edge:rgb(0 0 0 / .08);
+  --scrim:rgb(0 0 0 / .32);
+  /* the four bases, used by the sunflower and the cipher */
+  --base-a:#0071e3;
+  --base-c:#5e5ce6;
+  --base-g:#30b0c7;
+  --base-t:#ff9f0a;
+
+  --font-sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Inter","Helvetica Neue",system-ui,sans-serif;
+  --font-serif:ui-serif,"New York","Newsreader",Georgia,serif;
+  --font-mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace;
+
+  --r-s:8px; --r-m:12px; --r-l:20px; --r-xl:28px;
+  --ease:cubic-bezier(.32,.72,0,1);
+  --col:980px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#000000; --bg-2:#101012; --tile:#1c1c1e;
+    --label:#f5f5f7; --label-2:#a1a1a6; --label-3:#86868b;
+    --sep:rgb(255 255 255 / .14);
+    --accent:#2997ff; --accent-ink:#ffffff;
+    --success:#30d158; --danger:#ff453a;
+    --glass:rgb(22 22 23 / .72); --glass-edge:rgb(255 255 255 / .10);
+    --scrim:rgb(0 0 0 / .6);
+    --base-a:#2997ff; --base-c:#7d7aff; --base-g:#40c8e0; --base-t:#ffb340;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#000000; --bg-2:#101012; --tile:#1c1c1e;
+  --label:#f5f5f7; --label-2:#a1a1a6; --label-3:#86868b;
+  --sep:rgb(255 255 255 / .14);
+  --accent:#2997ff; --accent-ink:#ffffff;
+  --success:#30d158; --danger:#ff453a;
+  --glass:rgb(22 22 23 / .72); --glass-edge:rgb(255 255 255 / .10);
+  --scrim:rgb(0 0 0 / .6);
+  --base-a:#2997ff; --base-c:#7d7aff; --base-g:#40c8e0; --base-t:#ffb340;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);color:var(--label);
+  font-family:var(--font-sans);font-size:17px;line-height:1.47;letter-spacing:-.022em;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3{margin:0;text-wrap:balance;font-weight:600}
+p{margin:0}
+
+.wrap{max-width:var(--col);margin-inline:auto;padding-inline:22px}
+.band{padding-block:clamp(72px,11vw,128px)}
+.band.alt{background:var(--bg-2)}
+.eyebrow{font-size:17px;font-weight:600;color:var(--label-2);letter-spacing:-.01em;margin-bottom:10px}
+.h-section{font-size:clamp(36px,5.6vw,56px);line-height:1.07;letter-spacing:-.028em}
+.lede{font-size:clamp(19px,2.1vw,21px);line-height:1.38;color:var(--label-2);max-width:40ch;margin-top:18px;letter-spacing:-.016em}
+.section-head{margin-bottom:clamp(40px,6vw,64px)}
+.more{display:inline-flex;align-items:center;gap:4px;font-size:17px;min-height:44px}
+.more::after{content:"›";font-size:1.15em;line-height:1;transform:translateY(-1px)}
+
+/* ---------- Glass nav (navigation layer only) ---------- */
+.nav{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:20;
+  background:var(--glass);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:.5px solid var(--glass-edge);
+}
+.nav .wrap{display:flex;align-items:center;gap:20px;height:52px}
+.nav .brand{font-weight:600;font-size:17px;color:var(--label);white-space:nowrap}
+.nav .brand:hover{text-decoration:none}
+.nav ul{list-style:none;margin:0 0 0 auto;padding:0;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;min-width:0}
+.nav ul::-webkit-scrollbar{display:none}
+.nav li a{display:flex;align-items:center;min-height:44px;padding-inline:10px;font-size:13px;color:var(--label);opacity:.8;white-space:nowrap;letter-spacing:-.01em}
+.nav li a:hover{opacity:1;text-decoration:none}
+.nav li a[aria-current="true"]{opacity:1;font-weight:600}
+@media (prefers-reduced-transparency: reduce){.nav{background:var(--bg);backdrop-filter:none;-webkit-backdrop-filter:none}}
+
+/* ---------- Hero ---------- */
+.hero{padding-block:clamp(56px,9vw,104px) clamp(32px,5vw,56px);text-align:center;overflow:hidden}
+.hero .eyebrow{font-size:clamp(15px,1.6vw,19px);margin-bottom:14px}
+.hero h1{font-size:clamp(56px,11vw,128px);line-height:1;letter-spacing:-.045em;font-weight:700}
+.hero .tag{
+  font-size:clamp(26px,4.2vw,44px);line-height:1.12;letter-spacing:-.03em;font-weight:600;margin-top:14px;
+  background:linear-gradient(90deg,var(--base-a),var(--base-c) 55%,var(--base-g));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .intro{font-size:clamp(17px,1.9vw,21px);color:var(--label-2);max-width:36em;margin:22px auto 0;line-height:1.42}
+.cta{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center;align-items:center;margin-top:30px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border-radius:980px;
+  background:var(--accent);color:var(--accent-ink);font-size:17px;font-weight:500;border:0;cursor:pointer;font-family:inherit;letter-spacing:-.01em;
+  transition:transform .2s var(--ease),filter .2s var(--ease)
+}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.sunflower{display:block;margin:clamp(36px,5vw,56px) auto 0;width:min(440px,82vw);aspect-ratio:1;max-width:100%}
+.hero .caption{font-size:13px;color:var(--label-3);margin-top:8px}
+
+/* ---------- Story ---------- */
+.story p{font-size:clamp(28px,4.4vw,48px);line-height:1.14;letter-spacing:-.03em;font-weight:600;max-width:22em}
+.story .w{color:var(--label-3);transition:color .35s var(--ease)}
+.story .w.on{color:var(--label)}
+.story .sig{margin-top:28px;font-size:15px;color:var(--label-2);font-weight:400;letter-spacing:-.01em}
+
+/* ---------- Numbers ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.stat{background:var(--tile);border-radius:var(--r-xl);padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;gap:6px;min-height:200px;justify-content:flex-end}
+.stat .k{font-size:15px;font-weight:600;color:var(--label-2)}
+.stat .v{font-size:clamp(44px,6vw,72px);line-height:1;letter-spacing:-.04em;font-weight:700;font-variant-numeric:tabular-nums}
+.stat .d{font-size:15px;color:var(--label-2);line-height:1.4}
+.stat.feature{grid-column:span 2;background:linear-gradient(135deg,var(--base-a),var(--base-c));color:#fff}
+.stat.feature .k,.stat.feature .d{color:rgb(255 255 255 / .85)}
+@media (max-width:760px){.stats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.stat{min-height:160px}}
+@media (max-width:480px){.stats{grid-template-columns:minmax(0,1fr)}.stat.feature{grid-column:auto}}
+
+/* ---------- Outlook ---------- */
+.beliefs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,6vw,72px) clamp(32px,5vw,64px)}
+.belief{border-top:1px solid var(--sep);padding-top:22px;min-width:0}
+.belief .n{font-size:13px;color:var(--label-3);font-variant-numeric:tabular-nums;letter-spacing:0}
+.belief blockquote{margin:10px 0 0;font-family:var(--font-serif);font-size:clamp(26px,3.2vw,34px);line-height:1.15;letter-spacing:-.015em;font-weight:400}
+.belief p{color:var(--label-2);margin-top:14px;max-width:34em}
+.belief .src{display:inline-flex;align-items:center;min-height:44px;font-size:15px;margin-top:4px;background:none;border:0;padding:0;color:var(--accent);cursor:pointer;font-family:inherit;letter-spacing:-.01em}
+.belief .src::after{content:" ›"}
+@media (max-width:700px){.beliefs{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- Experience (inset grouped list) ---------- */
+.list{background:var(--tile);border-radius:var(--r-xl);overflow:hidden}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 24px;padding:24px clamp(20px,3vw,32px);position:relative}
+.row + .row::before{content:"";position:absolute;top:0;left:clamp(20px,3vw,32px);right:0;border-top:.5px solid var(--sep)}
+.row h3{font-size:21px;letter-spacing:-.02em}
+.row .org{color:var(--label-2);font-size:17px}
+.row .when{color:var(--label-3);font-size:15px;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.row p{grid-column:1 / -1;color:var(--label-2);margin-top:8px;max-width:46em}
+.chips{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:0;list-style:none}
+.chip{font-size:13px;padding:5px 12px;border-radius:980px;background:var(--bg-2);color:var(--label);letter-spacing:-.005em}
+.band.alt .chip{background:var(--bg-2)}
+@media (max-width:600px){.row{grid-template-columns:minmax(0,1fr)}.row .when{text-align:left}}
+
+/* ---------- Projects ---------- */
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.tile{background:var(--tile);border-radius:var(--r-xl);padding:clamp(24px,3.2vw,40px);min-width:0;display:flex;flex-direction:column;gap:10px}
+.band:not(.alt) .tile{background:var(--bg-2)}
+.tile h3{font-size:clamp(24px,2.8vw,32px);letter-spacing:-.025em;line-height:1.1}
+.tile .kicker{font-size:13px;font-weight:600;color:var(--label-2);text-transform:uppercase;letter-spacing:.06em}
+.tile p{color:var(--label-2)}
+.span-6{grid-column:span 6}.span-3{grid-column:span 3}.span-2{grid-column:span 2}
+@media (max-width:860px){.span-2{grid-column:span 3}}
+@media (max-width:600px){.span-3,.span-2{grid-column:span 6}}
+
+/* cipher lab */
+.lab{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4vw,48px);margin-top:18px;align-items:start}
+@media (max-width:820px){.lab{grid-template-columns:minmax(0,1fr)}}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-size:13px;font-weight:600;color:var(--label-2)}
+.field input{
+  font:inherit;font-size:17px;color:var(--label);background:var(--bg);border:1px solid var(--sep);border-radius:var(--r-m);
+  padding:0 14px;min-height:44px;width:100%;letter-spacing:-.01em
+}
+.field input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.dna{
+  font-family:var(--font-mono);font-size:14px;line-height:1.7;letter-spacing:.08em;word-break:break-all;
+  background:var(--bg);border-radius:var(--r-m);padding:14px 16px;max-height:168px;overflow:auto;border:1px solid var(--sep)
+}
+.dna b{font-weight:500}
+.dna .A{color:var(--base-a)}.dna .C{color:var(--base-c)}.dna .G{color:var(--base-g)}.dna .T{color:var(--base-t)}
+.dna .mut{background:var(--danger);color:#fff;border-radius:3px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--label-2);margin-top:10px;font-variant-numeric:tabular-nums}
+.status{margin-top:14px;font-size:15px;display:flex;gap:10px;align-items:flex-start;min-height:44px}
+.status .dot{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:700;margin-top:1px}
+.status.ok .dot{background:var(--success)}
+.status.bad .dot{background:var(--danger)}
+.status .out{font-weight:600}
+.status small{display:block;color:var(--label-2);font-size:13px;font-weight:400;margin-top:2px}
+.lab-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn.small{font-size:15px;padding:0 18px}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.steps li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;font-size:15px;color:var(--label-2)}
+.steps li b{color:var(--label);font-weight:600;display:block}
+.steps .i{width:28px;height:28px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font-size:13px;font-weight:600;color:var(--label);font-variant-numeric:tabular-nums}
+.minisun{width:100%;max-width:280px;aspect-ratio:1;display:block;margin:4px auto 18px}
+
+/* ---------- Writing ---------- */
+.essays{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.essay{
+  text-align:left;font:inherit;color:inherit;border:0;cursor:pointer;background:var(--tile);border-radius:var(--r-xl);
+  padding:28px;display:flex;flex-direction:column;gap:10px;min-height:260px;min-width:0;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease)
+}
+.essay:hover{transform:translateY(-3px) scale(1.01);box-shadow:0 18px 40px rgb(0 0 0 / .10)}
+.essay .tag{font-size:13px;font-weight:600;color:var(--label-2)}
+.essay h3{font-size:24px;letter-spacing:-.025em;line-height:1.12}
+.essay .sub{color:var(--label-2);font-size:15px}
+.essay .pull{font-family:var(--font-serif);font-size:19px;line-height:1.35;margin-top:auto;padding-top:14px;letter-spacing:-.01em}
+.essay .go{color:var(--accent);font-size:15px}
+.essay .go::after{content:" ›"}
+.essay.wide{grid-column:span 2;background:linear-gradient(160deg,var(--tile),var(--bg-2))}
+.band.alt .essay.wide{background:var(--tile)}
+@media (max-width:900px){.essays{grid-template-columns:repeat(2,minmax(0,1fr))}.essay.wide{grid-column:span 2}}
+@media (max-width:560px){.essays{grid-template-columns:minmax(0,1fr)}.essay.wide{grid-column:auto}}
+
+/* reading sheet */
+dialog.sheet{
+  border:0;padding:0;width:min(760px,100% - 24px);max-height:min(88vh,100% - 24px);border-radius:var(--r-xl);
+  background:var(--bg);color:var(--label);box-shadow:0 30px 80px rgb(0 0 0 / .35);overflow:hidden
+}
+dialog.sheet[open]{display:flex;flex-direction:column;animation:sheet-in .4s var(--ease)}
+dialog.sheet::backdrop{background:var(--scrim);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+@keyframes sheet-in{from{transform:translateY(24px) scale(.98);opacity:.4}to{transform:none;opacity:1}}
+.sheet-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 8px 8px 24px;border-bottom:.5px solid var(--sep);flex:none}
+.sheet-bar span{font-size:13px;color:var(--label-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.close{width:44px;height:44px;border-radius:50%;border:0;background:var(--bg-2);color:var(--label);font-size:20px;cursor:pointer;display:grid;place-items:center;flex:none}
+.sheet-body{overflow:auto;padding:clamp(24px,5vw,48px);padding-bottom:56px}
+.sheet-body h2{font-size:clamp(32px,5vw,44px);letter-spacing:-.03em;line-height:1.08}
+.sheet-body .sub{font-size:19px;color:var(--label-2);margin-top:8px}
+.sheet-body .by{font-size:13px;color:var(--label-3);margin-top:16px;padding-bottom:24px;border-bottom:.5px solid var(--sep)}
+.sheet-body article{font-family:var(--font-serif);font-size:19px;line-height:1.6;letter-spacing:-.003em;max-width:36em}
+.sheet-body article p{margin-top:1.05em}
+.sheet-body article h3{font-family:var(--font-sans);font-size:21px;margin-top:1.6em;letter-spacing:-.02em}
+.sheet-body .refs{margin-top:36px;font-size:13px;color:var(--label-2);line-height:1.5}
+.sheet-body .refs h4{font-size:13px;margin:0 0 8px;color:var(--label)}
+.sheet-body .refs p{margin-top:6px;overflow-wrap:anywhere}
+
+/* ---------- Off the clock ---------- */
+.life{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.life .tile h3{font-size:22px}
+.life .glyph{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--bg);margin-bottom:6px}
+.band:not(.alt) .life .glyph{background:var(--tile)}
+.glyph svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:860px){.life{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.life{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- Education ---------- */
+.edu{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}
+@media (max-width:820px){.edu{grid-template-columns:minmax(0,1fr)}}
+.edu .tile h3{font-size:28px}
+.kv{display:grid;gap:14px;margin-top:8px}
+.kv div{display:flex;flex-direction:column;gap:2px}
+.kv dt{font-size:13px;font-weight:600;color:var(--label-2)}
+.kv dd{margin:0}
+.certs{list-style:none;margin:0;padding:0}
+.certs li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:12px 0;border-top:.5px solid var(--sep);font-size:15px}
+.certs li:first-child{border-top:0}
+.certs .when{color:var(--label-3);font-variant-numeric:tabular-nums;white-space:nowrap}
+.certs .who{display:block;color:var(--label-2);font-size:13px}
+.chips.loose{margin-top:6px}
+
+/* ---------- Contact ---------- */
+.contact{text-align:center}
+.contact .h-section{font-size:clamp(40px,7vw,80px);letter-spacing:-.04em}
+.contact .lede{margin-inline:auto}
+.mail{
+  display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:32px;
+  font-size:clamp(19px,2.6vw,28px);font-weight:600;letter-spacing:-.02em
+}
+.mail .addr{user-select:all;overflow-wrap:anywhere}
+.copied{font-size:13px;color:var(--success);min-height:20px;margin-top:10px}
+footer{border-top:.5px solid var(--sep);padding-block:22px;font-size:12px;color:var(--label-3)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* motion: transform-only reveals, content is always visible */
+.rise{transition:transform .9s var(--ease)}
+.js .rise.pending{transform:translateY(28px)}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .js .rise.pending{transform:none}
+}
+@media (prefers-contrast: more){
+  :root{--label-2:#3a3a3c;--label-3:#48484a;--sep:rgb(0 0 0 / .4)}
+}
+</style>
+<style>
+.reader{padding-block:clamp(40px,7vw,80px) clamp(56px,8vw,96px)}
+.reader .wrap{max-width:760px}
+.reader .back{display:inline-flex;align-items:center;min-height:44px;font-size:15px;margin-bottom:12px}
+.reader .back::before{content:"‹ ";white-space:pre}
+.reader .sheet-body{padding:0}
+.more-reading{border-top:.5px solid var(--sep);margin-top:56px;padding-top:28px}
+.more-reading h2{font-size:21px;letter-spacing:-.02em;margin-bottom:12px}
+.more-reading ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.more-reading a{display:flex;flex-direction:column;padding:10px 0;min-height:44px}
+.more-reading a span{color:var(--label-2);font-size:15px}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <a class="brand" href="/">Mihir Mahale</a>
+    <ul>
+      <li><a href="/#outlook">Outlook</a></li>
+      <li><a href="/#work">Work</a></li>
+      <li><a href="/#projects">Projects</a></li>
+      <li><a href="/#writing" aria-current="true">Writing</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<main class="reader">
+  <div class="wrap">
+    <a class="back" href="/#writing">All writing</a>
+    <div class="sheet-body">
+      <p class="eyebrow" style="font-size:15px">Personal essay · September 2025</p>
+      <h1 style="font-size:clamp(36px,6vw,56px);letter-spacing:-.035em;line-height:1.05">AI and I</h1>
+      <p class="sub">A self-reflection on living with a language model</p>
+      <p class="by">By <a href="/">Mihir Mahale</a> · September 2025</p>
+      <article><p>For this assignment, I took the self-reflection approach. Instead of doing research from the outside, I turned inward and looked at how I’ve actually used a large language model (LLM) in my own day-to-day life. My “method,” if you can call it that, was to pick three different situations where I used ChatGPT—writing emails, planning workouts, and getting music recommendations—and really think about how I interacted with it. I tried to notice when I leaned too much on the AI, and also when it pushed me to reflect on myself. In a way, I wasn’t just studying the tool, I was studying the back-and-forth between me and it. That loop is where I think things get interesting. Note: the AI I worked with is ChatGPT, which is built on OpenAI’s GPT architecture.</p><p>Growing up I was always fascinated by technology. I just found it very cool. I always wanted to become Iron Man, not just because of his fancy gadgets, expensive cars and his lavish lifestyle fueled by all the money in the world that he possessed but also because of his companion —not because of Pepper Potts (okay okay maybe just a little) but because of JARVIS his personal AI assistant. J.A.R.V.I.S. —is a name and an abbreviation for Just A Rather Very Intelligent System— was witty, reliable, and seemed to understand Tony almost better than Tony understood himself. JARVIS was my first ever introduction to the concept of Artificial Intelligence and I think he set the bar real high as still today we computer scientists strive to build a highly advanced system as him. I thought AI should feel like a true partner, someone who “gets” you.</p><p>Reality was humbler. The first time I tried ChatGPT in college, I was honestly underwhelmed. It reminded me of Siri, which I already had on my iPhone for ten years. “What’s the hype? I don’t get it.” I thought. My questions were half-hearted, and its answers were just okay. I didn’t realize that the problem wasn’t just the AI. It was also how I was approaching it and how I was using it. I wasn’t asking it good questions or trying to push it to its limits. I was treating it like a joke. That soon changed once I started using it for things I actually cared about.</p><p>One of the earliest “serious” uses for ChatGPT personally was email drafting. Like most students, I would spend too long rewriting emails to professors or trying to make a request sound respectful and genuine without being stiff. ChatGPT felt like a cheat-code. Give it some details, and it spits out a draft in seconds.</p><p>If only it were that easy. Those drafts were too polished and felt unnatural. Yes, they sounded professional, but I felt that the emails “lost my voice”. When reading those drafts it would make me think, “Okay… that’s technically correct, but it is missing the emotion and the sentiment that I want it to have.” Especially when I want to address some concern to the professor. It felt like the AI had stripped out my personality and the warmth leaving behind a skeleton of meaningless words.</p><p>Naturally I started telling it to make adjustments to the draft. I would tell it to do things like, “Add more emotion to the draft,” or “Don’t change this sentence,” or “…. mention this in your draft.” This back-and-forth taught me something: ChatGPT only does exactly what I tell it to do. If I give it a vague prompt, I get a vague email in return. If I’m specific, I get something closer to what I need. In other words: garbage in = garbage out.</p><p>It also made me realize the gaps in the semantics. The AI doesn’t really know what any word means. Let’s take “darling” as an example. AI just strings together words that usually accompany the word darling without considering to whom or why I am using that word. The way I use the word darling referring to my cat differs so much when I use it referring to my girlfriend. That difference—the space between human intention and machine abstraction—is why I feel AI sometimes misses the mark.</p><p>Sometimes I feel that it is really easy to forget about the invisible machinery running in the background. I find it very fascinating that every time I hit “submit” on a ChatGPT prompt, it travels through servers in massive data centers, powered by tons of energy and cooled by enormous amounts of water. Crawford (2021) points out that the “cloud” is not weightless. It relies on physical infrastructure and hardware scattered around the world. When I was using ChatGPT to clean up an email, I wasn’t just saving myself twenty minutes—I was plugging into a global system with a real planetary cost.</p><p>Later, I tried something bolder. I asked ChatGPT to design a workout plan. My goal was to cut fat without losing muscle. Normally, I’d drown in YouTube videos and Reddit threads, all giving different advice. Instead this time, I typed a single prompt. The response was impressively detailed: treadmill speeds, set and rep counts, even explanations about why each choice mattered.</p><p>On the surface, this is exactly what I was looking for. But then I paused, I caught myself in action. I wasn’t just asking for information, I was outsourcing my judgment to a machine. Unlike a real coach, ChatGPT wasn’t watching my form, adjusting to my sleep patterns, or holding me accountable. It was giving structured text without responsibility. On top of that I had not even verified the science behind its advice.</p><p>Agre (1997) argues that computation runs on abstraction and implementation—rules formalized in ways that are powerful but detached from messy human realities. That’s exactly what I saw. ChatGPT’s plan wasn’t really for me. It was for “someone like me” who fits a pattern in its training data. The shiny surface hid the fact that it wasn’t trustworthy in the same way a coach would be.</p><p>I also realized how easy it is to fall for false alarms i.e. polished language can look like truth when it&#x27;s not. That lesson stuck. Now I use ChatGPT’s fitness advice as a brainstorm, not a prescription. I adapt it, check it against my own experience, and remind myself that judgment is mine to keep.</p><p>The most fun (and frustrating) experiment I did was with music. I gave ChatGPT three songs I liked—Fire Fire by Shimza, Birthday Sex by Levi, and Say What by Rampa—and asked it for recommendations.</p><p>Some results were excellent. I found new tracks that landed straight into my daily playlist. But others were awful. Some didn’t match the mood at all; some playlists felt like they came from another genre entirely. That’s when I realized I had assumed too much: I thought the AI could read my taste from just three examples. Music doesn’t work that way. It’s tied to memory, culture, mood—things far richer than patterns of sound and predictive analytics. As Siegel (2013) notes, predictive systems don’t actually know individuals, they operate on probabilities. ChatGPT wasn’t “reading my soul.” It was predicting songs that might match based on similar patterns. Sometimes those probabilities nailed it, sometimes they failed miserably.</p><p>But even the failures were valuable. They forced me to ask: what exactly do I like about these songs? Was it the rhythm, the vocals, the atmosphere? Oddly enough, the AI’s misses helped me articulate my own taste better than I had before.</p><p>Looking across these three experiences—emails, workouts, and music—I noticed a pattern. ChatGPT mirrored me. If I was vague, it was vague. If I wanted shortcuts, it gave me shortcuts. If I expected perfection, it reminded me that the responsibility was still mine. Being a computer science major I can’t help but also think about the privacy and data concerns that AI brings along with it. I like how Zuboff puts it. Zuboff (2019) warns us that we are entering an age of surveillance capitalism, where any and every prompt we type—even about music—feeds into a system that monetizes my preferences.</p><p>I would like to end my essay with Brynjolfsson and McAfee’s (2014) second machine age paradox: it gives us productivity and convenience, but also disruption in work, culture, and meaning. Those insights feel personal when I think about how I trusted a workout plan or questioned a playlist.</p><p>J.A.R.V.I.S. set my childhood expectations impossibly high. But ChatGPT, in its own way, has taught me something more useful. It hasn’t given me superpowers—it’s given me a mirror. It shows me my habits, my shortcuts, my blind spots. And sometimes, it tests me more than I test it.</p><p>As someone who grew up dreaming of building technology, I find that both humbling and motivating. The true challenge of AI isn’t to create a perfect machine. It’s to learn how to live responsibly with the imperfect, powerful systems we already have.</p></article>
+      <div class="refs"><h4>References</h4><p>Agre, P. E. (1997). Computation and human experience (Ch. 4: Abstraction and implementation, pp. 66–88). Cambridge University Press.</p><p>Brynjolfsson, E., &amp; McAfee, A. (2014). The second machine age: Work, progress, and prosperity in a time of brilliant technologies. W. W. Norton &amp; Company.</p><p>Crawford, K. (2021). Atlas of AI: Power, politics, and the planetary costs of artificial intelligence. Yale University Press.</p><p>Siegel, E. (2013). Predictive analytics: The power to predict who will click, buy, lie, or die. Wiley.</p><p>Zuboff, S. (2019). The age of surveillance capitalism: The fight for a human future at the new frontier of power. PublicAffairs.</p></div>
+    </div>
+    <section class="more-reading" aria-labelledby="more-h">
+      <h2 id="more-h">More writing</h2>
+      <ul><li><a href="/writing/driving/">AI and Practice: Driving<span>What happens to driving when the driver is software</span></a></li><li><a href="/writing/voice/">Voice<span>How AI helps people with ALS keep their own voice</span></a></li><li><a href="/writing/data/">Data<span>The new power possessed by companies</span></a></li><li><a href="/writing/generations/">AI &amp; Society<span>Younger generations and older generations</span></a></li><li><a href="/writing/risk/">Risk, Responsibility, and Collapse<span>The Big Dig and the I-35W bridge disasters</span></a></li><li><a href="/writing/paper/">The Case for Paper<span>A speech on writing by hand in a digital world</span></a></li></ul>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Mihir Mahale</span>
+    <span><a href="/">mihirmahale.com</a> · <a href="https://www.linkedin.com/in/mihir-mahale" rel="me noopener" target="_blank">LinkedIn</a></span>
+  </div>
+</footer>
+</body>
+</html>
